@@ -1,0 +1,2 @@
+- [x] Add hover effects to roles list li elements in styles.css
+- [ ] Test the styling by opening index.html in browser
