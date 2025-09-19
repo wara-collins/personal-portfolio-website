@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gerald Dixon Portfolio</title>
+  <title>collins warah Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <!-- Boxicons CDN -->
@@ -12,16 +12,18 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">V</div>
+      <a href="index.html" class="logo">
+        <img src="img/Untitled-2.jpg " alt="Logo" class="logo-img" />
+      </a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <i class='bx bx-menu'></i>
       </button>
       <ul class="nav-links">
-        <li><a href="#about" class="active">About Me</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="index.html" class="active">HOME</a></li>   
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="resumes.html">RESUME</a></li>
+        
 
       </ul>
       <a href="#contact" class="btn-contact">Contact Me</a>
@@ -44,7 +46,7 @@
         <div class="social-links">
           <a href="#" aria-label="GitHub" class="social-icon"><i class='bx bxl-github'></i></a>
           <a href="#" aria-label="LinkedIn" class="social-icon"><i class='bx bxl-linkedin'></i></a>
-          <a href="#" aria-label="Behance" class="social-icon"><i class='bx bxl-behance'></i></a>
+          <a href="#" aria-label="Behance" class="social-icon"><i class='bx bxl-facebook'></i></a>
         </div>
       </div>
       <div class="hero-right">
@@ -55,36 +57,36 @@
       </div>
     </section>
 
-    <section class="experience-infographic">
-      <div class="infographic-container">
-        <div class="circle-experience">
-          <div class="circle-text">
-            <span class="years">10</span>
-            <span class="years-label">Years<br />Of Experience</span>
+    
+    <section id="about" class="about-section">
+      <h3>About Me</h3>
+      <div style="display: flex; align-items: center; gap: 40px;">
+        <p class="about-text" style="flex: 1; margin: 0;">
+          I'm Collins Warah, an IT Engineer with 8+ years of experience in network architecture, cloud solutions, and cybersecurity. I'm focused on creating innovative, reliable systems that help businesses thrive in the digital world.
+        </p>
+        <div class="experience-stats-container" style="flex: 1;">
+          <div class="circle-experience">
+            <div class="circle-text">
+              <div class="years-number">10</div>
+              <div class="years-text">Years<br />Of Experience</div>
+            </div>
           </div>
-        </div>
-        <div class="stats-list">
-          <div class="stat-item">
-            <span class="stat-number">2K</span>
-            <span class="stat-label">Apps Developed</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">40</span>
-            <span class="stat-label">Consultants</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">160</span>
-            <span class="stat-label">Employers</span>
+          <div class="stats-list">
+            <div class="stat-item">
+              <div class="stat-number">2K</div>
+              <div class="stat-label">Apps Developed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">40</div>
+              <div class="stat-label">Consultants</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">160</div>
+              <div class="stat-label">Employers</div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="about" class="about-section">
-      <h3>About Me</h3>
-      <p class="about-text">
-        I'm Collins Warah, an IT Engineer with 8+ years of experience in network architecture, cloud solutions, and cybersecurity. I'm focused on creating innovative, reliable systems that help businesses thrive in the digital world.
-      </p>
       <div class="info-boxes">
         <div class="info-box">
           <div class="info-icon">08</div>
@@ -286,7 +288,7 @@
 
     <section class="our-services-section">
       <div class="container">
-        <h4 class="section-subtitle">AREAS WHAT WE SERVE</h4>
+        
         <h3 class="section-title">Our Services</h3>
         <div class="services-cards">
           <div class="service-card">
@@ -350,6 +352,16 @@
             <h4 class="reason-title">High Level of Usability</h4>
             <p class="reason-description">All our products have high usability allowing users to easily operate the apps.</p>
           </div>
+          <div class="reason-item">
+            <div class="reason-number">06</div>
+            <h4 class="reason-title">High Level of Usability</h4>
+            <p class="reason-description">All our products have high usability allowing users to easily operate the apps.</p>
+          </div>
+          <div class="reason-item">
+            <div class="reason-number">06</div>
+            <h4 class="reason-title">High Level of Usability</h4>
+            <p class="reason-description">All our products have high usability allowing users to easily operate the apps.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -358,7 +370,9 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section footer-about">
-        <h2 class="footer-logo">Verbalizer</h2>
+        <a href="index.html" class="footer-logo">
+          <img src="img/Untitled-2.jpg " alt="Logo" class="footer-logo-img" />
+        </a>
         <p class="footer-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         </p>
@@ -372,11 +386,11 @@
       <div class="footer-section footer-links">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Teacher</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT ME</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="resumes.html">RESUME</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
       <div class="footer-section footer-links">
@@ -395,8 +409,9 @@
           <input type="email" placeholder="Your Email Address" aria-label="Email Address" required />
           <button type="submit">Send</button>
         </form>
-        <p class="footer-address"><i class='bx bxs-map'></i> Jl. Sunset Road No.815, Kuta</p>
-        <p class="footer-email"><i class='bx bxs-envelope'></i> support@domain.com</p>
+        <p class="footer-address"><i class='bx bxs-map'></i>Cameroon, Bamenda North-west region</p>
+        <p class="footer-email"><i class='bx bxs-envelope'></i>mrcollinswarah@gmail.com</p>
+        <p class="footer-email"><i class='bx bxs-envelope'></i>collinswarah200@gmail.com</p>
       </div>
     </div>
     <div class="footer-bottom">
