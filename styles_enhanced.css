@@ -1,0 +1,189 @@
+/* Enhanced Styling for Hidden Projects and See All Services Functionality */
+
+/* Hidden Projects Styling */
+.hidden-project {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden-project.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced Project Card Hover Effects */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.9);
+}
+
+/* Project Images Enhanced Styling */
+.project-images img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(91, 33, 182, 0.9);
+}
+
+/* Enhanced Button Styling for See All */
+.btn-see-all {
+  background: linear-gradient(90deg, #ff7f50, #ec4899);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 0 15px rgba(255, 127, 80, 0.5);
+}
+
+.btn-see-all:hover {
+  background: linear-gradient(90deg, #ec4899, #ff7f50);
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(236, 72, 153, 0.7);
+}
+
+/* Projects Container Animation */
+.projects-container {
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced Tag Styling */
+.tag {
+  background: linear-gradient(135deg, #5b21b6, #7c3aed);
+  color: #e0e7ff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tag:hover {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  transform: scale(1.05);
+}
+
+/* Enhanced Project Category Styling */
+.project-category {
+  background: linear-gradient(90deg, #ff7f50, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 127, 80, 0.5);
+}
+
+/* Loading Animation for Projects */
+.project-card {
+  animation: slideInFromBottom 0.6s ease forwards;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered Animation for Multiple Projects */
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* Enhanced Mobile Responsiveness for Projects */
+@media (max-width: 768px) {
+  .hidden-project {
+    transform: translateY(10px);
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+  }
+
+  .project-images {
+    min-height: 200px;
+  }
+}
+
+/* Dark Mode Enhancement */
+.project-card {
+  background: linear-gradient(135deg, #12183b 0%, #1e293b 100%);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.project-card:hover {
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+/* Smooth Transition for All Projects */
+.project-card,
+.project-images img,
+.project-title,
+.project-description,
+.project-category,
+.project-author,
+.tag {
+  transition: all 0.3s ease;
+}
+
+/* Enhanced Focus States for Accessibility */
+.btn-see-all:focus,
+.project-card:focus {
+  outline: 2px solid #ff7f50;
+  outline-offset: 2px;
+}
+
+/* Loading State for Projects */
+.project-card.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.project-card.loading .project-title::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff7f50;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

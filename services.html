@@ -1,17 +1,23 @@
-<!DOCTYPE html>
+an<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services - Collins Warah Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="services.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Boxicons CDN -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services - Collins Warah Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Boxicons CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
       <nav class="navbar">
         <a href="index.html" class="logo">
           <img src="img/Untitled-2.jpg" alt="Logo" class="logo-img" />
@@ -20,211 +26,315 @@
           <i class="bx bx-menu"></i>
         </button>
         <ul class="nav-links">
+
           <li><a href="index.html" class="active">HOME</a></li>
           <li><a href="about.html">ABOUT ME</a></li>
-           <li><a href="services.html">SERVICES</a></li>
-          <li><a href="resumes.html">RESUME</a></li>
-         
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li class="mobile-contact">
+            <a href="contact.html" class="btn-contact">Contact Me</a>
+          </li>
         </ul>
         <a href="contact.html" class="btn-contact">Contact Me</a>
       </nav>
     </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1>My Services</h1>
-        <p>Explore the range of services I offer to help bring your ideas to life.</p>
-      </div>
-    </section>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>My Services</h1>
+          <p>
+            Explore the range of services I offer to help bring your ideas to
+            life.
+          </p>
+        </div>
+      </section>
 
-    <!-- Web Design Section -->
-    <section class="service-category" id="web-design">
-      <div class="container">
-        <h2 class="category-title">Web Design</h2>
-        <p class="category-description">Creating visually appealing and user-friendly websites.</p>
-        <div class="service-items">
-          <div class="service-item">
-            <i class="bx bx-palette service-icon"></i>
-            <h3>UI/UX Design</h3>
-            <p>Designing intuitive user interfaces and experiences.</p>
+      <!-- Services Tabs -->
+      <section class="services-tabs-section">
+        <div class="container">
+          <div class="services-tabs">
+            <button class="service-tab-button active" data-service="web-design">
+              Web Design
+            </button>
+            <button class="service-tab-button" data-service="web-development">
+              Web Development
+            </button>
+            <button class="service-tab-button" data-service="digital-marketing">
+              Digital Marketing
+            </button>
+            <button class="service-tab-button" data-service="e-commerce">
+              E-commerce Solutions
+            </button>
+            <button class="service-tab-button" data-service="consulting">
+              Consulting
+            </button>
           </div>
-          <div class="service-item">
-            <i class="bx bx-mobile service-icon"></i>
-            <h3>Responsive Design</h3>
-            <p>Ensuring websites work perfectly on all devices.</p>
+        </div>
+      </section>
+
+      <!-- Web Design Section -->
+      <section class="service-category active" id="web-design">
+        <div class="container">
+          <h2 class="category-title">Web Design</h2>
+          <p class="category-description">
+            Creating visually appealing and user-friendly websites.
+          </p>
+          <div class="service-items">
+            <div class="service-item">
+              <i class="bx bx-palette service-icon"></i>
+              <h3>UI/UX Design</h3>
+              <p>Designing intuitive user interfaces and experiences.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-mobile service-icon"></i>
+              <h3>Responsive Design</h3>
+              <p>Ensuring websites work perfectly on all devices.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-brush service-icon"></i>
+              <h3>Graphic Design</h3>
+              <p>Creating stunning visuals and branding elements.</p>
+            </div>
           </div>
-          <div class="service-item">
-            <i class="bx bx-brush service-icon"></i>
-            <h3>Graphic Design</h3>
-            <p>Creating stunning visuals and branding elements.</p>
+        </div>
+      </section>
+
+      <!-- Web Development Section -->
+      <section class="service-category" id="web-development">
+        <div class="container">
+          <h2 class="category-title">Web Development</h2>
+          <p class="category-description">
+            Building robust and scalable web applications.
+          </p>
+          <div class="service-items">
+            <div class="service-item">
+              <i class="bx bx-code service-icon"></i>
+              <h3>Frontend Development</h3>
+              <p>Developing interactive front-end using modern technologies.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-server service-icon"></i>
+              <h3>Backend Development</h3>
+              <p>Creating powerful backend systems and APIs.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-data service-icon"></i>
+              <h3>Database Design</h3>
+              <p>Designing efficient and secure databases.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Digital Marketing Section -->
+      <section class="service-category" id="digital-marketing">
+        <div class="container">
+          <h2 class="category-title">Digital Marketing</h2>
+          <p class="category-description">
+            Promoting your brand online effectively.
+          </p>
+          <div class="service-items">
+            <div class="service-item">
+              <i class="bx bx-search service-icon"></i>
+              <h3>SEO Optimization</h3>
+              <p>Improving search engine rankings and visibility.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-trending-up service-icon"></i>
+              <h3>Social Media Marketing</h3>
+              <p>Managing and growing your social media presence.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-target-lock service-icon"></i>
+              <h3>Content Marketing</h3>
+              <p>Creating engaging content to attract and retain customers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- E-commerce Section -->
+      <section class="service-category" id="e-commerce">
+        <div class="container">
+          <h2 class="category-title">E-commerce Solutions</h2>
+          <p class="category-description">
+            Building online stores and payment systems.
+          </p>
+          <div class="service-items">
+            <div class="service-item">
+              <i class="bx bx-cart service-icon"></i>
+              <h3>Online Store Setup</h3>
+              <p>Setting up fully functional e-commerce platforms.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-credit-card service-icon"></i>
+              <h3>Payment Integration</h3>
+              <p>Integrating secure payment gateways.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-package service-icon"></i>
+              <h3>Inventory Management</h3>
+              <p>Managing products and orders efficiently.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Consulting Section -->
+      <section class="service-category" id="consulting">
+        <div class="container">
+          <h2 class="category-title">Consulting</h2>
+          <p class="category-description">
+            Providing expert advice and guidance.
+          </p>
+          <div class="service-items">
+            <div class="service-item">
+              <i class="bx bx-brain service-icon"></i>
+              <h3>Technical Consulting</h3>
+              <p>Offering insights on technology choices and strategies.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-group service-icon"></i>
+              <h3>Project Management</h3>
+              <p>Managing projects from conception to completion.</p>
+            </div>
+            <div class="service-item">
+              <i class="bx bx-support service-icon"></i>
+              <h3>Maintenance & Support</h3>
+              <p>Providing ongoing support and updates.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Latest Project Section -->
+    <section class="latest-project-section">
+      <div class="container latest-project-container">
+        <h2 class="section-title">Latest Projects</h2>
+        <div class="projects-tabs-container">
+          <div class="projects-tabs">
+            <button class="tab-button active" data-tab="frontend">
+              Frontend Projects
+            </button>
+            <button class="tab-button" data-tab="backend">
+              Backend Projects
+            </button>
+          </div>
+          <div class="projects-content">
+            <div id="frontend" class="tab-content active">
+              <div class="project-item" data-project="frontend-1">
+                <img src="img/Online learning-amico.png" alt="Project 1" />
+                <h3>Project One</h3>
+                <p>Frontend development project with React and Redux.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="frontend-2">
+                <img
+                  src="img/JavaScript frameworks-cuate.png"
+                  alt="Project 2"
+                />
+                <h3>Project Two</h3>
+                <p>Interactive dashboard with Vue.js and D3.js.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="frontend-3">
+                <img src="img/Online tech talks-bro.png" alt="Project 3" />
+                <h3>Project Three</h3>
+                <p>Fullstack e-commerce platform with MERN stack.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="frontend-4">
+                <img src="img/Conference-rafiki.png" alt="Project 4" />
+                <h3>Project Four</h3>
+                <p>Mobile app development with React Native.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="frontend-5">
+                <img src="img/Business analytics-bro.png" alt="Project 5" />
+                <h3>Project Five</h3>
+                <p>Portfolio website with Angular and TypeScript.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="frontend-6">
+                <img src="img/Coding workshop-pana.png" alt="Project 6" />
+                <h3>Project Six</h3>
+                <p>Blog platform with Gatsby and GraphQL.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+            </div>
+            <div id="backend" class="tab-content">
+              <div class="project-item" data-project="backend-1">
+                <img src="img/Online learning-amico.png" alt="Project 1" />
+                <h3>Project One</h3>
+                <p>Backend API development with Node.js and Express.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="backend-2">
+                <img
+                  src="img/JavaScript frameworks-cuate.png"
+                  alt="Project 2"
+                />
+                <h3>Project Two</h3>
+                <p>RESTful API with Python and Django.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="backend-3">
+                <img src="img/Online tech talks-bro.png" alt="Project 3" />
+                <h3>Project Three</h3>
+                <p>Microservices architecture with Spring Boot.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="backend-4">
+                <img src="img/Conference-rafiki.png" alt="Project 4" />
+                <h3>Project Four</h3>
+                <p>Database management with PostgreSQL and MongoDB.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="backend-5">
+                <img src="img/Business analytics-bro.png" alt="Project 5" />
+                <h3>Project Five</h3>
+                <p>Marketing website with SEO optimization.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+              <div class="project-item" data-project="backend-6">
+                <img src="img/Coding workshop-pana.png" alt="Project 6" />
+                <h3>Project Six</h3>
+                <p>Cloud infrastructure setup and automation.</p>
+                <a href="#" class="project-link">View Details</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Web Development Section -->
-    <section class="service-category" id="web-development">
-      <div class="container">
-        <h2 class="category-title">Web Development</h2>
-        <p class="category-description">Building robust and scalable web applications.</p>
-        <div class="service-items">
-          <div class="service-item">
-            <i class="bx bx-code service-icon"></i>
-            <h3>Frontend Development</h3>
-            <p>Developing interactive front-end using modern technologies.</p>
-          </div>
-          <div class="service-item">
-            <i class="bx bx-server service-icon"></i>
-            <h3>Backend Development</h3>
-            <p>Creating powerful backend systems and APIs.</p>
-          </div>
-          <div class="service-item">
-            <i class="bx bx-data service-icon"></i>
-            <h3>Database Design</h3>
-            <p>Designing efficient and secure databases.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <footer class="footer"></footer>
 
-    <!-- Digital Marketing Section -->
-    <section class="service-category" id="digital-marketing">
-      <div class="container">
-        <h2 class="category-title">Digital Marketing</h2>
-        <p class="category-description">Promoting your brand online effectively.</p>
-        <div class="service-items">
-          <div class="service-item">
-            <i class="bx bx-search service-icon"></i>
-            <h3>SEO Optimization</h3>
-            <p>Improving search engine rankings and visibility.</p>
-          </div>
-          <div class="service-item">
-            <i class="bx bx-trending-up service-icon"></i>
-            <h3>Social Media Marketing</h3>
-            <p>Managing and growing your social media presence.</p>
-          </div>
-          <div class="service-item">
-            <i class="bx bx-target-lock service-icon"></i>
-            <h3>Content Marketing</h3>
-            <p>Creating engaging content to attract and retain customers.</p>
-          </div>
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <img id="modal-image" src="" alt="Project Image" />
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+          <div id="modal-details"></div>
         </div>
-      </div>
-    </section>
-
-    <!-- E-commerce Section -->
-    <section class="service-category" id="e-commerce">
-      <div class="container">
-        <h2 class="category-title">E-commerce Solutions</h2>
-        <p class="category-description">Building online stores and payment systems.</p>
-        <div class="service-items">
-          <div class="service-item">
-            <i class="bx bx-cart service-icon"></i>
-            <h3>Online Store Setup</h3>
-            <p>Setting up fully functional e-commerce platforms.</p>
-          </div>
-          <div class="service-item">
-            <i class="bx bx-credit-card service-icon"></i>
-            <h3>Payment Integration</h3>
-            <p>Integrating secure payment gateways.</p>
-          </div>
-          <div class="service-item">
-            <i class="bx bx-package service-icon"></i>
-            <h3>Inventory Management</h3>
-            <p>Managing products and orders efficiently.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Consulting Section -->
-    <section class="service-category" id="consulting">
-      <div class="container">
-        <h2 class="category-title">Consulting</h2>
-        <p class="category-description">Providing expert advice and guidance.</p>
-        <div class="service-items">
-          <div class="service-item">
-            <i class="bx bx-brain service-icon"></i>
-            <h3>Technical Consulting</h3>
-            <p>Offering insights on technology choices and strategies.</p>
-          </div>
-          <div class="service-item">
-            <i class="bx bx-group service-icon"></i>
-            <h3>Project Management</h3>
-            <p>Managing projects from conception to completion.</p>
-          </div>
-          <div class="service-item">
-            <i class="bx bx-support service-icon"></i>
-            <h3>Maintenance & Support</h3>
-            <p>Providing ongoing support and updates.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section footer-about">
-        <a href="index.html" class="footer-logo">
-          <img src="img/Untitled-2.jpg " alt="Logo" class="footer-logo-img" />
-        </a>
-        <p class="footer-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        </p>
-        <div class="footer-social-icons">
-          <a href="#" aria-label="Facebook" class="social-icon"><i class='bx bxl-facebook'></i></a>
-          <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-twitter'></i></a>
-          <a href="#" aria-label="Instagram" class="social-icon"><i class='bx bxl-instagram'></i></a>
-          <a href="#" aria-label="YouTube" class="social-icon"><i class='bx bxl-youtube'></i></a>
-        </div>
-      </div>
-      <div class="footer-section footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="about.html">HOME</a></li>
-          <li><a href="about.html">ABOUT ME</a></li>
-          <li><a href="services.html">SERVICES</a></li>
-          <li><a href="resumes.html">RESUME/a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-      <div class="footer-section footer-links">
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
-          <li><a href="#">Disclaimer</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-section footer-contact">
-        <h3>Stay Connected</h3>
-        <form class="footer-form" action="#" method="post">
-          <input type="email" placeholder="Your Email Address" aria-label="Email Address" required />
-          <button type="submit">Send</button>
-        </form>
-        <p class="footer-address"><i class='bx bxs-map'></i>Cameroon, Bamenda North-west region</p>
-        <p class="footer-email"><i class='bx bxs-envelope'></i> mrcollinswarah.com</p>
-        <p class="footer-email"><i class='bx bxs-envelope'></i> collinswarah200.com</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>Copyright © 2021. All rights reserved.</p>
-    </div>
-  </footer>
 
-  <script>
-    // Responsive navbar toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    <script src="services.js"></script>
+    <script>
+      // Responsive navbar toggle
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
 
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-  </script>
-</body>
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
+  </body>
 </html>

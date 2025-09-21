@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Collins Warah Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="resume.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Boxicons CDN -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="img/Untitled-2.jpg" alt="Logo" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="bx bx-menu"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="resume.html" class="active">RESUME</a></li>
+      </ul>
+      <a href="contact.html" class="btn-contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-resume-section">
+      <div class="container about-resume-container">
+        <h2 class="section-title">About My Resume</h2>
+        <div class="about-resume-content">
+          <div class="resume-info">
+            <div class="info-row"><span class="info-label">Age:</span> <span class="info-value">20</span></div>
+            <div class="info-row"><span class="info-label">Residence:</span> <span class="info-value">CAMEROON</span></div>
+            <div class="info-row"><span class="info-label">Address:</span> <span class="info-value">Bamenda,North-West Regi</span></div>
+            <div class="info-row"><span class="info-label">E-mail:</span> <span class="info-value">mrcollinswarah@gmail.com</span></div>
+            <div class="info-row"><span class="info-label">Phone:</span> <span class="info-value">+237 652868652</span></div>
+            <div class="info-row"><span class="info-label">Freelance:</span> <span class="info-value">Available</span></div>
+          </div>
+          <div class="resume-image">
+            <img src="Screenshot_20250109-161522_Video Player.jpg " alt="Team Meeting" />
+          </div>
+        </div>
+        <div class="resume-skills">
+          <div class="skill-box">
+            <div class="skill-percent">50%</div>
+            <div class="skill-name">Graphic Design</div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-percent">75%</div>
+            <div class="skill-name">Development</div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-percent">38%</div>
+            <div class="skill-name">Marketing Ideas</div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-percent">63%</div>
+            <div class="skill-name">Web Management</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section footer-about">
+        <a href="index.html" class="footer-logo">
+          <img src="img/Untitled-2.jpg" alt="Logo" class="footer-logo-img" />
+        </a>
+        <p class="footer-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        </p>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Facebook" class="social-icon"><i class='bx bxl-facebook'></i></a>
+          <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-twitter'></i></a>
+          <a href="#" aria-label="Instagram" class="social-icon"><i class='bx bxl-instagram'></i></a>
+          <a href="#" aria-label="YouTube" class="social-icon"><i class='bx bxl-youtube'></i></a>
+        </div>
+      </div>
+      <div class="footer-section footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT ME</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="footer-section footer-links">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section footer-contact">
+        <h3>Stay Connected</h3>
+        <form class="footer-form" action="#" method="post">
+          <input type="email" placeholder="Your Email Address" aria-label="Email Address" required />
+          <button type="submit">Send</button>
+        </form>
+        <p class="footer-address"><i class='bx bxs-map'></i>Cameroon, Bamenda North-west region</p>
+        <p class="footer-email"><i class='bx bxs-envelope'></i> mrcollinswarah.com</p>
+        <p class="footer-email"><i class='bx bxs-envelope'></i> collinswarah200.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2021. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Responsive navbar toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

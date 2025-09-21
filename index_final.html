@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>collins warah Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googlecheapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles_enhanced.css" />
+  <link rel="stylesheet" href="specialization_styles.css" />
   <!-- Boxicons CDN -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -19,11 +21,11 @@
         <i class='bx bx-menu'></i>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">HOME</a></li>   
+        <li><a href="index.html" class="active">HOME</a></li>
         <li><a href="about.html">ABOUT ME</a></li>
         <li><a href="services.html">SERVICES</a></li>
-        <li><a href="resumes.html">RESUME</a></li>
-        
+        <li><a href="resume.html">RESUME</a></li>
+
 
       </ul>
       <a href="#contact" class="btn-contact">Contact Me</a>
@@ -47,6 +49,7 @@
           <a href="#" aria-label="GitHub" class="social-icon"><i class='bx bxl-github'></i></a>
           <a href="#" aria-label="LinkedIn" class="social-icon"><i class='bx bxl-linkedin'></i></a>
           <a href="#" aria-label="Behance" class="social-icon"><i class='bx bxl-facebook'></i></a>
+          <a href="#" aria-label="Behance" class="social-icon"><i class='bx bxl-whatsapp'></i></a>
         </div>
       </div>
       <div class="hero-right">
@@ -57,7 +60,7 @@
       </div>
     </section>
 
-    
+
     <section id="about" class="about-section">
       <h3>About Me</h3>
       <div style="display: flex; align-items: center; gap: 40px;">
@@ -232,6 +235,71 @@
       </div>
     </section>
 
+    <!-- New Specialization Section -->
+    <section class="specialization-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>My Specialization ↗</span>
+          </div>
+          <h2>Advanced Technical Expertise</h2>
+          <p>Showcasing my specialized projects in modern web technologies and data analytics</p>
+        </div>
+
+        <div class="specialization-grid">
+          <div class="specialization-card">
+            <div class="specialization-icon">
+              <i class="bx bx-shopping-bag"></i>
+            </div>
+            <h3>TechStore Pro</h3>
+            <p class="specialization-category">E-commerce Platform</p>
+            <p class="specialization-description">
+              A modern e-commerce platform with advanced features including real-time inventory management, secure payment processing, and responsive design for all devices.
+            </p>
+            <div class="specialization-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Stripe</span>
+            </div>
+            <div class="specialization-author">
+              <img src="img/Coding workshop-pana.png" alt="Author" class="author-img" />
+              <p class="author-name">Collins Warah</p>
+            </div>
+            <div class="specialization-images">
+              <img src="img/JavaScript frameworks-cuate.png" alt="TechStore Pro Screenshot" />
+              <img src="img/Hand coding-bro.png" alt="TechStore Pro Code" />
+            </div>
+          </div>
+
+          <div class="specialization-card">
+            <div class="specialization-icon">
+              <i class="bx bx-bar-chart-alt"></i>
+            </div>
+            <h3>Analytics Pro</h3>
+            <p class="specialization-category">Business Intelligence Dashboard</p>
+            <p class="specialization-description">
+              Comprehensive business analytics dashboard with real-time data visualization, interactive charts, and advanced reporting features for data-driven decision making.
+            </p>
+            <div class="specialization-tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">Python</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="specialization-author">
+              <img src="img/Coding workshop-pana.png" alt="Author" class="author-img" />
+              <p class="author-name">Collins Warah</p>
+            </div>
+            <div class="specialization-images">
+              <img src="img/Business analytics-bro.png" alt="Analytics Pro Screenshot" />
+              <img src="img/Online tech talks-bro.png" alt="Analytics Pro Features" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="skills-experience-section">
       <div class="skills-container">
         <h3>My <span class="highlight">Skills</span></h3>
@@ -288,7 +356,7 @@
 
     <section class="our-services-section">
       <div class="container">
-        
+
         <h3 class="section-title">Our Services</h3>
         <div class="services-cards">
           <div class="service-card">
@@ -378,9 +446,9 @@
         </p>
         <div class="footer-social-icons">
           <a href="#" aria-label="Facebook" class="social-icon"><i class='bx bxl-facebook'></i></a>
-          <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-twitter'></i></a>
-          <a href="#" aria-label="Instagram" class="social-icon"><i class='bx bxl-instagram'></i></a>
-          <a href="#" aria-label="YouTube" class="social-icon"><i class='bx bxl-youtube'></i></a>
+          <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-whatsapp'></i></a>
+          <a href="#" aria-label="Instagram" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" aria-label="YouTube" class="social-icon"><i class='bx bxl-github'></i></a>
         </div>
       </div>
       <div class="footer-section footer-links">
@@ -428,6 +496,27 @@
 
     navToggle.addEventListener('click', () => {
       navLinks.classList.toggle('open');
+    });
+
+    // Show additional projects when "See All Services" button is clicked
+    document.addEventListener('DOMContentLoaded', function() {
+      const seeAllButton = document.querySelector('.btn-see-all');
+      const hiddenProjects = document.querySelectorAll('.hidden-project');
+
+      if (seeAllButton && hiddenProjects.length > 0) {
+        seeAllButton.addEventListener('click', function() {
+          // Toggle visibility of hidden projects
+          hiddenProjects.forEach(project => {
+            if (project.style.display === 'none') {
+              project.style.display = 'block';
+              seeAllButton.textContent = 'Show Less Services ↑';
+            } else {
+              project.style.display = 'none';
+              seeAllButton.textContent = 'See All Services →';
+            }
+          });
+        });
+      }
     });
   </script>
 </body>

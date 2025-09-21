@@ -1,12 +1,18 @@
-# TODO: Add Images to Percentage Boxes in Profile-Skills-Section
+# Menu Exit Options Enhancement
 
-- [x] Edit about.html to add boxicon icons inside each skill-box before the percentage
-- [x] Edit abouts.css to style the icons appropriately without increasing box size
-- [x] Test the changes to ensure icons fit and no width/height increase
+## Current Status
+- Basic close button (X) exists in navigation
+- Click-outside-to-close functionality exists
+- Need to add multiple exit options for better UX
 
-# TODO: Add Skills and Experience Section to About Page
+## Planned Enhancements
+- [ ] Add keyboard support (Escape key to close menu)
+- [ ] Add close button at bottom of mobile menu
+- [ ] Improve close button styling and visibility
+- [ ] Add touch/swipe gesture support for mobile
+- [ ] Add better visual feedback for menu states
 
-- [x] Add new section in about.html after profile-skills-section
-- [x] Add sample skills and experience content
-- [ ] Add CSS styling in abouts.css for the new section
-- [ ] Test the new section for layout and responsiveness
+## Files to Modify
+- services_new.html: Add bottom close button and improve existing close button
+- services.css: Style the new close button and improve existing styles
+- services.js: Add keyboard and gesture support

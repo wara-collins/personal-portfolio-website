@@ -1,0 +1,130 @@
+/* Resume Page Styles */
+
+.about-resume-section {
+  background-color: #0a0f2c;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.about-resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-resume-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.resume-info {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.info-row {
+  background-color: #12183b;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.info-label {
+  color: #ff7f50;
+}
+
+.resume-image {
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-image img {
+  max-width: 100%;
+  height:400px ;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 127, 80, 0.5);
+}
+
+.resume-skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  background-color: #12183b;
+  border: 3px solid #7b3fe4;
+  border-radius: 12px;
+  padding: 30px 20px;
+  flex: 1 1 180px;
+  text-align: center;
+  color: #fff;
+  cursor: default;
+  transition: border-color 0.3s ease;
+}
+
+.skill-box:hover {
+  border-color: #a67eff;
+}
+
+.skill-percent {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #a67eff;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-resume-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume-info,
+  .resume-image {
+    flex: 1 1 100%;
+    max-width: 400px;
+  }
+
+  .resume-skills {
+    justify-content: center;
+  }
+
+  .skill-box {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-box {
+    flex: 1 1 100%;
+  }
+}

@@ -138,7 +138,7 @@ body {
 
 .service-icon {
   font-size: 2.5rem;
-  color: #2563eb; /* blue color for icons */
+  color: #ff7f50; /* blue color for icons */
   margin-bottom: 15px;
 }
 
@@ -177,11 +177,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #12183b;
+  background: ;
   padding: 20px 40px;
   border-radius: 30px;
   max-width: 1200px;
   margin: 20px auto;
+
 }
 
 .logo {
