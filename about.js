@@ -55,4 +55,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener("scroll", checkAndAnimateStats);
   window.addEventListener("load", checkAndAnimateStats);
+
+  // Contact Form Handler
+  const contactForm = document.getElementById('contactForm');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Get form data
+      const name = contactForm.querySelector('#name').value;
+      const email = contactForm.querySelector('#email').value;
+      const message = contactForm.querySelector('#message').value;
+
+      // Basic validation
+      if (!name || !email || !message) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+      }
+
+      // Show success message
+      alert('Thank you for your message! I will get back to you soon.');
+
+      // Reset form
+      contactForm.reset();
+    });
+  }
+
+  // Add smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Add animation on scroll for elements
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, observerOptions);
+
+  // Observe elements for animation
+  document.querySelectorAll('.process-step, .journey-card, .service-card, .contact-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
 });

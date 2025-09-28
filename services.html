@@ -1,4 +1,4 @@
-an<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,52 +8,207 @@ an<!DOCTYPE html>
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="services.css" />
+    
     <link rel="stylesheet" href="styles.css" />
-    <!-- Boxicons CDN -->
+    <link rel="stylesheet" href="sev.css" />
+    
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="index.html" class="logo">
-          <img src="img/Untitled-2.jpg" alt="Logo" class="logo-img" />
-        </a>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <i class="bx bx-menu"></i>
-        </button>
-        <ul class="nav-links">
+ <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="img/LOGO 2.jpg  " alt="Logo" class="logo-img" />
+      </a>
+      
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="resume.html">RESUME</a></li>
 
-          <li><a href="index.html" class="active">HOME</a></li>
-          <li><a href="about.html">ABOUT ME</a></li>
-          <li><a href="services.html">SERVICES</a></li>
-          <li><a href="resume.html">RESUME</a></li>
-          <li class="mobile-contact">
-            <a href="contact.html" class="btn-contact">Contact Me</a>
-          </li>
-        </ul>
-        <a href="contact.html" class="btn-contact">Contact Me</a>
-      </nav>
-    </header>
+
+      </ul>
+      <a href="contact.html" class="btn-contact">Contact Me</a>
+    </nav>
+  </header>
 
     <main>
       <!-- Hero Section -->
       <section class="hero-section">
-        <div class="hero-content">
-          <h1>My Services</h1>
-          <p>
-            Explore the range of services I offer to help bring your ideas to
-            life.
-          </p>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="hero-badge">
+                <span>We are IT service agency ↗</span>
+              </div>
+              <h1>Think Big. We make IT, possible!</h1>
+              <p>
+                We place you at the centre of international networks to advance
+                your strategic interests.
+              </p>
+              <div class="hero-buttons">
+                <a href="#services" class="btn-primary">Our Team ↗</a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img
+                src="img/Conference-rafiki.png"
+                alt="Professional IT consultant"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Grid Section -->
+      <section class="services-grid-section">
+        <div class="container">
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bx bx-palette"></i>
+              </div>
+              <h3>UI/UX Design Services</h3>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bx bx-briefcase"></i>
+              </div>
+              <h3>Business Consultation</h3>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bx bx-code-alt"></i>
+              </div>
+              <h3>Website Development</h3>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bx bx-support"></i>
+              </div>
+              <h3>Support Management</h3>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bx bx-trending-up"></i>
+              </div>
+              <h3>Market Research</h3>
+            </div>
+            <div class="service-card hidden">
+              <div class="service-icon">
+                <i class="bx bx-mobile-alt"></i>
+              </div>
+              <h3>Mobile App Development</h3>
+            </div>
+            <div class="service-card hidden">
+              <div class="service-icon">
+                <i class="bx bx-cloud"></i>
+              </div>
+              <h3>Cloud Solutions</h3>
+            </div>
+            <div class="service-card hidden">
+              <div class="service-icon">
+                <i class="bx bx-data"></i>
+              </div>
+              <h3>Data Analytics</h3>
+            </div>
+            <div class="service-card hidden">
+              <div class="service-icon">
+                <i class="bx bx-shield-check"></i>
+              </div>
+              <h3>Security Consulting</h3>
+            </div>
+          </div>
+          <button id="see-all-btn" class="btn-see-all">See All Services</button>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-content">
+            <p class="stats-text">
+              Join over <strong>15,600</strong> happy clients!
+            </p>
+            <div class="company-logos">
+              <div class="logo-item">envato</div>
+              <div class="logo-item">slack</div>
+              <div class="logo-item">Figma</div>
+              <div class="logo-item">Sketch</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Company Section -->
+      <section class="about-company-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <div class="section-badge">
+                <span>About Our Company ↗</span>
+              </div>
+              <h2>Choose The Best IT Service Company</h2>
+              <p>
+                An IT firm or MSP who keeps your IT running smoothly at all
+                times is like a plumber who fixes your pipes - that's what they
+                are supposed to do. Many IT firms struggle.
+              </p>
+
+              <div class="features">
+                <div class="feature">
+                  <div class="feature-icon">
+                    <i class="bx bx-money"></i>
+                  </div>
+                  <h4>Moneyback Guarantee</h4>
+                </div>
+                <div class="feature">
+                  <div class="feature-icon">
+                    <i class="bx bx-headphone"></i>
+                  </div>
+                  <h4>Technical Support</h4>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <a href="contact.html" class="btn-secondary">Contact Us ↗</a>
+                <div class="phone">
+                  <span>Call For Help</span>
+                  <strong>91 124 3467 2345</strong>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <img src="img/Online learning-amico.png" alt="IT Professional" />
+              <div class="play-button">
+                <i class="bx bx-play"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Services Tabs -->
       <section class="services-tabs-section">
         <div class="container">
+          <div class="section-header">
+            <div class="section-badge">
+              <span>Our Awesome Services ↗</span>
+            </div>
+            <h2>We Are Dedicated To Serve You All Time.</h2>
+          </div>
+
           <div class="services-tabs">
             <button class="service-tab-button active" data-service="web-design">
               Web Design
@@ -77,25 +232,46 @@ an<!DOCTYPE html>
       <!-- Web Design Section -->
       <section class="service-category active" id="web-design">
         <div class="container">
-          <h2 class="category-title">Web Design</h2>
-          <p class="category-description">
-            Creating visually appealing and user-friendly websites.
-          </p>
           <div class="service-items">
             <div class="service-item">
-              <i class="bx bx-palette service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-palette"></i>
+              </div>
               <h3>UI/UX Design</h3>
-              <p>Designing intuitive user interfaces and experiences.</p>
+              <p>
+                We're wildly passionate about our purpose, and it hits us as
+                transforming everything.
+              </p>
             </div>
             <div class="service-item">
-              <i class="bx bx-mobile service-icon"></i>
-              <h3>Responsive Design</h3>
-              <p>Ensuring websites work perfectly on all devices.</p>
+              <div class="service-icon">
+                <i class="bx bx-line-chart"></i>
+              </div>
+              <h3>Business Planning</h3>
+              <p>
+                Our customers get selections and business opportunities instead
+                of just projects.
+              </p>
             </div>
             <div class="service-item">
-              <i class="bx bx-brush service-icon"></i>
-              <h3>Graphic Design</h3>
-              <p>Creating stunning visuals and branding elements.</p>
+              <div class="service-icon">
+                <i class="bx bx-task"></i>
+              </div>
+              <h3>Project Management</h3>
+              <p>
+                Our global community of about 5,000 people can be found working
+                from corporate.
+              </p>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bx bx-shield"></i>
+              </div>
+              <h3>Cyber Security</h3>
+              <p>
+                We know our people are our greatest asset, and we are putting
+                our money.
+              </p>
             </div>
           </div>
         </div>
@@ -104,25 +280,34 @@ an<!DOCTYPE html>
       <!-- Web Development Section -->
       <section class="service-category" id="web-development">
         <div class="container">
-          <h2 class="category-title">Web Development</h2>
-          <p class="category-description">
-            Building robust and scalable web applications.
-          </p>
           <div class="service-items">
             <div class="service-item">
-              <i class="bx bx-code service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-code"></i>
+              </div>
               <h3>Frontend Development</h3>
               <p>Developing interactive front-end using modern technologies.</p>
             </div>
             <div class="service-item">
-              <i class="bx bx-server service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-server"></i>
+              </div>
               <h3>Backend Development</h3>
               <p>Creating powerful backend systems and APIs.</p>
             </div>
             <div class="service-item">
-              <i class="bx bx-data service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-data"></i>
+              </div>
               <h3>Database Design</h3>
               <p>Designing efficient and secure databases.</p>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bx bx-cloud"></i>
+              </div>
+              <h3>Cloud Solutions</h3>
+              <p>Implementing scalable cloud infrastructure.</p>
             </div>
           </div>
         </div>
@@ -131,25 +316,34 @@ an<!DOCTYPE html>
       <!-- Digital Marketing Section -->
       <section class="service-category" id="digital-marketing">
         <div class="container">
-          <h2 class="category-title">Digital Marketing</h2>
-          <p class="category-description">
-            Promoting your brand online effectively.
-          </p>
           <div class="service-items">
             <div class="service-item">
-              <i class="bx bx-search service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-search"></i>
+              </div>
               <h3>SEO Optimization</h3>
               <p>Improving search engine rankings and visibility.</p>
             </div>
             <div class="service-item">
-              <i class="bx bx-trending-up service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-share"></i>
+              </div>
               <h3>Social Media Marketing</h3>
               <p>Managing and growing your social media presence.</p>
             </div>
             <div class="service-item">
-              <i class="bx bx-target-lock service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-edit"></i>
+              </div>
               <h3>Content Marketing</h3>
               <p>Creating engaging content to attract and retain customers.</p>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bx bx-target-lock"></i>
+              </div>
+              <h3>Targeted Advertising</h3>
+              <p>Running effective ad campaigns across platforms.</p>
             </div>
           </div>
         </div>
@@ -158,25 +352,34 @@ an<!DOCTYPE html>
       <!-- E-commerce Section -->
       <section class="service-category" id="e-commerce">
         <div class="container">
-          <h2 class="category-title">E-commerce Solutions</h2>
-          <p class="category-description">
-            Building online stores and payment systems.
-          </p>
           <div class="service-items">
             <div class="service-item">
-              <i class="bx bx-cart service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-cart"></i>
+              </div>
               <h3>Online Store Setup</h3>
               <p>Setting up fully functional e-commerce platforms.</p>
             </div>
             <div class="service-item">
-              <i class="bx bx-credit-card service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-credit-card"></i>
+              </div>
               <h3>Payment Integration</h3>
               <p>Integrating secure payment gateways.</p>
             </div>
             <div class="service-item">
-              <i class="bx bx-package service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-package"></i>
+              </div>
               <h3>Inventory Management</h3>
               <p>Managing products and orders efficiently.</p>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bx bx-truck"></i>
+              </div>
+              <h3>Order Fulfillment</h3>
+              <p>Streamlining the order processing workflow.</p>
             </div>
           </div>
         </div>
@@ -185,32 +388,40 @@ an<!DOCTYPE html>
       <!-- Consulting Section -->
       <section class="service-category" id="consulting">
         <div class="container">
-          <h2 class="category-title">Consulting</h2>
-          <p class="category-description">
-            Providing expert advice and guidance.
-          </p>
           <div class="service-items">
             <div class="service-item">
-              <i class="bx bx-brain service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-brain"></i>
+              </div>
               <h3>Technical Consulting</h3>
               <p>Offering insights on technology choices and strategies.</p>
             </div>
             <div class="service-item">
-              <i class="bx bx-group service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-group"></i>
+              </div>
               <h3>Project Management</h3>
               <p>Managing projects from conception to completion.</p>
             </div>
             <div class="service-item">
-              <i class="bx bx-support service-icon"></i>
+              <div class="service-icon">
+                <i class="bx bx-support"></i>
+              </div>
               <h3>Maintenance & Support</h3>
               <p>Providing ongoing support and updates.</p>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="bx bx-trending-up"></i>
+              </div>
+              <h3>Performance Optimization</h3>
+              <p>Improving system performance and efficiency.</p>
             </div>
           </div>
         </div>
       </section>
-    </main>
 
-    <!-- Latest Project Section -->
+      <!-- Latest Project Section -->
     <section class="latest-project-section">
       <div class="container latest-project-container">
         <h2 class="section-title">Latest Projects</h2>
@@ -311,29 +522,472 @@ an<!DOCTYPE html>
       </div>
     </section>
 
-    <footer class="footer"></footer>
-
-    <!-- Project Detail Modal -->
+    <!-- Project Modal -->
     <div id="project-modal" class="modal">
       <div class="modal-content">
         <span class="close-modal">&times;</span>
-        <div class="modal-body">
-          <img id="modal-image" src="" alt="Project Image" />
-          <h2 id="modal-title"></h2>
-          <p id="modal-description"></p>
-          <div id="modal-details"></div>
-        </div>
+        <img id="modal-image" src="" alt="Project Image" />
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <div id="modal-details"></div>
       </div>
     </div>
 
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Why Choose Us ↗</span>
+          </div>
+          <h2>We Are The Best Choice For Your Business</h2>
+          <p>Discover what sets us apart from the competition and why thousands of clients trust us with their IT needs.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="bx bx-time-five"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Round-the-clock technical support to ensure your business never stops. Our dedicated team is always ready to help.</p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="bx bx-shield-check"></i>
+            </div>
+            <h3>Security First</h3>
+            <p>Enterprise-grade security measures to protect your data and systems from cyber threats and vulnerabilities.</p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="bx bx-rocket"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Quick turnaround times without compromising quality. We understand the importance of meeting deadlines.</p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="bx bx-trophy"></i>
+            </div>
+            <h3>Expert Team</h3>
+            <p>Highly skilled professionals with years of experience in delivering cutting-edge IT solutions.</p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="bx bx-money"></i>
+            </div>
+            <h3>Cost Effective</h3>
+            <p>Competitive pricing that delivers maximum value for your investment in technology solutions.</p>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="bx bx-refresh"></i>
+            </div>
+            <h3>Continuous Updates</h3>
+            <p>Regular updates and maintenance to keep your systems running smoothly and up-to-date.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="process-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Our Process ↗</span>
+          </div>
+          <h2>How We Work</h2>
+          <p>Our proven methodology ensures successful project delivery every time.</p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Discovery & Analysis</h3>
+              <p>We start by understanding your business needs, goals, and current challenges through detailed consultation and analysis.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Planning & Strategy</h3>
+              <p>Based on our analysis, we develop a comprehensive strategy and project plan tailored to your specific requirements.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Design & Development</h3>
+              <p>Our expert team creates the solution using best practices, modern technologies, and industry standards.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Testing & Quality Assurance</h3>
+              <p>Rigorous testing ensures that every aspect of the solution works perfectly and meets your expectations.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <h3>Deployment & Launch</h3>
+              <p>We handle the deployment process smoothly, ensuring minimal disruption to your business operations.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">06</div>
+            <div class="step-content">
+              <h3>Support & Maintenance</h3>
+              <p>Ongoing support and maintenance to ensure your solution continues to perform optimally over time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies & Tools Section -->
+    <section class="technologies-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Technologies & Tools ↗</span>
+          </div>
+          <h2>Technologies We Master</h2>
+          <p>We stay ahead of the curve by mastering the latest technologies and tools to deliver cutting-edge solutions.</p>
+        </div>
+
+        <div class="tech-categories">
+          <div class="tech-category">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i class="bx bx-code-alt"></i>
+              </div>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="tech-items">
+              <div class="tech-item">
+                <i class="bx bxl-react"></i>
+                <span>React</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-vuejs"></i>
+                <span>Vue.js</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-angular"></i>
+                <span>Angular</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-javascript"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-typescript"></i>
+                <span>TypeScript</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-css3"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i class="bx bx-server"></i>
+              </div>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="tech-items">
+              <div class="tech-item">
+                <i class="bx bxl-nodejs"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-php"></i>
+                <span>PHP</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-java"></i>
+                <span>Java</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-spring-boot"></i>
+                <span>Spring Boot</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-django"></i>
+                <span>Django</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-postgresql"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-mongodb"></i>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i class="bx bx-cloud"></i>
+              </div>
+              <h3>Cloud & DevOps</h3>
+            </div>
+            <div class="tech-items">
+              <div class="tech-item">
+                <i class="bx bxl-aws"></i>
+                <span>AWS</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-azure"></i>
+                <span>Azure</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-google-cloud"></i>
+                <span>Google Cloud</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-docker"></i>
+                <span>Docker</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-kubernetes"></i>
+                <span>Kubernetes</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-jenkins"></i>
+                <span>Jenkins</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-git"></i>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i class="bx bx-mobile-alt"></i>
+              </div>
+              <h3>Mobile & Tools</h3>
+            </div>
+            <div class="tech-items">
+              <div class="tech-item">
+                <i class="bx bxl-react"></i>
+                <span>React Native</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-flutter"></i>
+                <span>Flutter</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-sketch"></i>
+                <span>Sketch</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-adobe"></i>
+                <span>Adobe XD</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-visual-studio"></i>
+                <span>VS Code</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-postman"></i>
+                <span>Postman</span>
+              </div>
+              <div class="tech-item">
+                <i class="bx bxl-slack"></i>
+                <span>Slack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <div class="section-badge">
+              <span>Ready to Get Started? ↗</span>
+            </div>
+            <h2>Let's Build Something Amazing Together</h2>
+            <p>Ready to transform your business with cutting-edge IT solutions? Get in touch with our expert team today and let's discuss how we can help you achieve your goals.</p>
+
+            <div class="cta-features">
+              <div class="cta-feature">
+                <div class="feature-icon">
+                  <i class="bx bx-time-five"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Quick Response</h4>
+                  <p>Get a response within 24 hours</p>
+                </div>
+              </div>
+              <div class="cta-feature">
+                <div class="feature-icon">
+                  <i class="bx bx-shield-check"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Secure & Reliable</h4>
+                  <p>Enterprise-grade security guaranteed</p>
+                </div>
+              </div>
+              <div class="cta-feature">
+                <div class="feature-icon">
+                  <i class="bx bx-trophy"></i>
+                </div>
+                <div class="feature-text">
+                  <h4>Expert Team</h4>
+                  <p>Certified professionals at your service</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-form">
+            <div class="contact-form">
+              <h3>Start Your Project Today</h3>
+              <form id="cta-contact-form">
+                <div class="form-group">
+                  <input type="text" id="cta-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="cta-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" id="cta-phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                  <select id="cta-service" required>
+                    <option value="">Select Service</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-app">Mobile App Development</option>
+                    <option value="ui-ux-design">UI/UX Design</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="e-commerce">E-commerce Solutions</option>
+                    <option value="consulting">IT Consulting</option>
+                    <option value="cloud-solutions">Cloud Solutions</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea id="cta-message" placeholder="Tell us about your project" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="img/Untitled-2.jpg" alt="Logo" class="footer-logo-img" />
+          </a>
+          <p class="footer-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" aria-label="Facebook" class="social-icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class='bx bxl-twitter'></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class='bx bxl-youtube'></i></a>
+          </div>
+        </div>
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="footer-section footer-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section footer-contact">
+          <h3>Stay Connected</h3>
+          <form class="footer-form" action="#" method="post">
+            <input type="email" placeholder="Your Email Address" aria-label="Email Address" required />
+            <button type="submit">Send</button>
+          </form>
+          <p class="footer-address"><i class='bx bxs-map'></i>Cameroon, Bamenda North-west region</p>
+          <p class="footer-email"><i class='bx bxs-envelope'></i> mrcollinswarah.com</p>
+          <p class="footer-email"><i class='bx bxs-envelope'></i> collinswarah200.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2021. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="services.js"></script>
+
     <script>
       // Responsive navbar toggle
-      const navToggle = document.querySelector(".nav-toggle");
-      const navLinks = document.querySelector(".nav-links");
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
 
-      navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
       });
     </script>
   </body>

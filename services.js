@@ -147,4 +147,31 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.style.display = 'none';
     }
   });
+
+  // See All Services functionality
+  const seeAllBtn = document.getElementById('see-all-btn');
+  const allServices = document.querySelectorAll('.service-card');
+  const initialVisibleCount = 5; // Number of initially visible services
+
+  if (seeAllBtn && allServices.length > initialVisibleCount) {
+    seeAllBtn.addEventListener('click', () => {
+      const hiddenServices = document.querySelectorAll('.service-card.hidden');
+      const isAnyHidden = hiddenServices.length > 0;
+
+      if (isAnyHidden) {
+        // Show all services
+        allServices.forEach(service => {
+          service.classList.remove('hidden');
+        });
+        seeAllBtn.textContent = 'Hide Services';
+      } else {
+        // Hide extra services (keep only first 5 visible)
+        const servicesToHide = Array.from(allServices).slice(initialVisibleCount);
+        servicesToHide.forEach(service => {
+          service.classList.add('hidden');
+        });
+        seeAllBtn.textContent = 'See All Services';
+      }
+    });
+  }
 });
